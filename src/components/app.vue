@@ -1,23 +1,24 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="wrap">
+    <GLOBALHEADER/>
+        <router-view class="vuews"></router-view>
+    <GLOBALFOOTER/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import GLOBALHEADER from '../components/GlobalHeader.vue';
+import GLOBALFOOTER from '../components/GlobalFooter.vue';
 export default {
-  name: 'App',
   components: {
-    HelloWorld
+    GLOBALHEADER,
+    GLOBALFOOTER
   }
 }
 </script>
 
 <style>
-#app {
+.wrap {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
