@@ -1,4 +1,5 @@
-# questionnaire
+# covid19-diagnoser
+
 
 ## Project setup
 ```
