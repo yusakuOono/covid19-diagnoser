@@ -7,7 +7,7 @@
         <dd>テストですよ</dd>
       </dl>
       <dl v-else>
-        <dl>ああ</dl>
+        <dl>{{bool}}</dl>
         <dd>朝ですよー</dd>
       </dl>
 
@@ -22,9 +22,11 @@ export default {
     }
   },
   mounted() {
-    let date = new Date();
-    let hour = date.getHours();
-    if(hour >= 9 || 17 <= hour){
+    let hour = 1;
+    let day = 6;
+    if((hour >= 17) || (day >= 6)) {
+      return this.bool = false;
+    }else if ((hour >= 9) && (day >= 1)) {
       return this.bool = true;
     }else{
       return this.bool = false;
