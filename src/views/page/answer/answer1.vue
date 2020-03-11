@@ -22,8 +22,9 @@ export default {
     }
   },
   mounted() {
-    let hour = 1;
-    let day = 6;
+    let date = new Date();
+    let hour = date.getHours();
+    let day = date.getDay();
     if((hour >= 17) || (day >= 6)) {
       return this.bool = false;
     }else if ((hour >= 9) && (day >= 1)) {
