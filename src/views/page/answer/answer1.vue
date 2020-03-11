@@ -15,6 +15,7 @@
 </template>
 
 <script>
+import JapaneseHolidays from'japanese-holidays'
 export default {
   data() {
     return {
@@ -25,7 +26,9 @@ export default {
     let date = new Date();
     let hour = date.getHours();
     let day = date.getDay();
-    if((hour >= 17) || (day >= 6)) {
+    var holiday = JapaneseHolidays.isHoliday(date);
+
+    if((hour >= 17) || (day >= 6) || (!holiday)) {
       return this.bool = false;
     }else if ((hour >= 9) && (day >= 1)) {
       return this.bool = true;
