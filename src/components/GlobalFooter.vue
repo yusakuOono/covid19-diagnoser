@@ -7,5 +7,7 @@
 </template>
 
 <style scoped>
-
+.footer{
+  font-size: 1.5rem;
+}
 </style>

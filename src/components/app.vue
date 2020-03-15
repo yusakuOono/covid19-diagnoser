@@ -1,5 +1,5 @@
 <template>
-  <div class="wrap">
+  <div class="Wrap">
     <GLOBALHEADER/>
         <router-view class="vuews"></router-view>
     <GLOBALFOOTER/>
@@ -17,13 +17,81 @@ export default {
 }
 </script>
 
-<style>
-.wrap {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style lang="scss">
+*{
+  margin: 0;
+  padding: 0;
+  .Wrap {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 8rem;
+    .Container{
+      max-width: 60%;
+      margin: auto;
+      ul{
+        li{
+          list-style: none;
+          a{
+            display: block;
+            background: #00A040;
+            color: #fff;
+            font-size: 2rem;
+            border-radius: 8px;
+            padding: 1rem;
+            font-weight: bold;
+            box-shadow: -1px 2px 5px #808080;
+          }
+        }
+      }
+      &Question{
+        margin-bottom: 4rem;
+        dt{
+          font-size: 2rem;
+          font-weight: bold;
+          margin-bottom: 1rem;
+        }
+        dd{
+          font-size: 1.5rem;
+          margin-bottom: .5rem;
+          &:nth-last-child(1){
+            margin-bottom:0;
+          }
+          &.Small{
+            font-size: 1.25rem;
+          }
+        }
+      }
+      &Btn{
+        li{
+          width: 80%;
+          margin: 0 auto 4rem;
+        }
+      }
+      &Towcolumn{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 6rem;
+        li{
+          width: 46%;
+          margin: 0 0 0 2%;
+          &:first-child{
+            margin: 0 2% 0 0;
+          }
+        }
+      }
+    }
+  }
+  //module
+  a{
+    text-decoration: none;
+    color: #000;
+    &:active{
+      color: #000;
+    }
+  }
 }
 </style>
