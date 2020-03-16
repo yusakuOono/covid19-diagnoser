@@ -30,12 +30,10 @@ export default {
     let day = date.getDay();
     var holiday = JapaneseHolidays.isHoliday(date);
 
-    if((hour >= 17) || (day >= 6) || (!holiday)) {
+    if((hour >= 17) || (day >= 6) || (holiday)) {
       return this.bool = false;
-    }else if ((hour >= 9) && (day >= 1)) {
+    }else if ((hour > 9) && (day > 1)) {
       return this.bool = true;
-    }else{
-      return this.bool = false;
     }
   }
 }
