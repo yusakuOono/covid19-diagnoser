@@ -83,6 +83,44 @@ export default {
           }
         }
       }
+      &Ans{
+        > svg {
+          width: 50px;
+          height: 50px;
+          > path:not(:first-of-type) {
+            fill: #454545;
+          }
+        }
+        h3{
+          font-size: 2rem;
+          margin-bottom: 1rem;
+        }
+        dl{
+          font-size: 1.5rem;
+          background: #eee;
+          padding: 1.75rem;
+          font-weight: bold;
+          border-radius: 8px;
+          margin-bottom: 2rem;
+          dt{
+            margin-bottom: 1rem;
+          }
+          dd{
+            .tel{
+              display: inline-block;
+              position: relative;
+              font-size: 3rem;
+              svg{
+                width: 50px;
+                height: 50px;
+                position: absolute;
+                top: 10%;
+                left: -50px;
+              }
+            }
+          }
+        }
+      }
     }
   }
   //module
