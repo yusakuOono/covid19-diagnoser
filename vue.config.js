@@ -1,5 +1,5 @@
 module.exports = {
-  publicPath: '/covid19-diagnoser/',
+  publicPath: '/',
   outputDir: 'docs',
   chainWebpack: (config) => {
     const svgRule = config.module.rule('svg');
