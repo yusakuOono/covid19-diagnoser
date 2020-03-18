@@ -1,7 +1,7 @@
 <template>
 <footer class="footer">
   <p class="backTop">
-    <a href="/covid19-diagnoser/" class="router-link-exact-active router-link-active">最初からやりなおす</a>
+    <router-link to='/'>最初からやりなおす</router-link>
   </p>
 </footer>
 </template>

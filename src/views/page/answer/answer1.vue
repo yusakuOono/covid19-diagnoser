@@ -25,12 +25,12 @@
           <dt>
             土日祝 終日
           </dt>
-          <p>
+          <dd>
             <a class="tel" href="tel:0353204592">
               <FacaIcon />
               0353204592
             </a>
-          </p>
+          </dd>
         </dl>
     </div>
   </div>
